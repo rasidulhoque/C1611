@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,arr[20],large=-9999,sec_large=-99994;
+    printf("the the number of elements in the array:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("enter the number:");
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(arr[i]>large)
+        large=arr[i];
+    }
+    for(i=0;i<n;i++)
+    {
+        if (arr[i]!=large)
+        {
+            if(arr[i]>sec_large)
+            sec_large=arr[i];
+        }
+    }
+    printf("the number you have enterd are:\n");
+    for(i=0;i<n;i++)
+    printf("%d\n",arr[i]);
+    printf("the largest numebr of these numbers is:%d",large);
+    printf("\nthe second largest number of these number is:%d",sec_large);
+    return 0;
+}
