@@ -10,6 +10,7 @@ int main()
     printf("sumation of the two numbers are:%d",total);
     return 0;
 }
+
 // function defination
 int sum(int a, int b)
 {
