@@ -1,6 +1,7 @@
 #include <stdio.h>
 int sum(int);
 int main()
+
 //function declaration
 {
     /*program to print the sum of n natural number using recurcive function*/
